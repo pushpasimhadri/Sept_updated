@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Init Started"
+insmod /lib/modules/5.15.19-xilinx-v2022.1/extra/testmodule.ko
+mknod /dev/ModuleDiagnostic c 501 0
+chmod 777 /dev/ModuleDiagnostic
+echo "Init Completed:"

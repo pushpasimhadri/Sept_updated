@@ -1,0 +1,10 @@
+[Unit]
+Description=init-script
+
+[Service]
+ExecStart=/usr/bin/init-script
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
+
